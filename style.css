@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color:#2A2A2A;
+	font-size: 16px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1200px;
+	}
+.priceTable{
+	margin: 20px;
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.5);
+	position: relative;			
+	}
+.startingUp:after{
+	content: '';
+	position: absolute;
+	background-image: url('icons/four-month.png');
+	height: 200px;
+	width: 190px;
+	background-repeat: no-repeat;
+	top: -14px;
+	right: -45px;
+	}
+.growing:after{
+	content: '';
+	position: absolute;
+	background-image: url('icons/twelvemonths.png');
+	height: 200px;
+	width: 190px;
+	background-repeat: no-repeat;
+	top: -6px;
+	right: -55px;
+	}
+.enterprise:after{
+	content: '';
+	position: absolute;
+	background-image: url('icons/fiftytwo-month.png');
+	height: 200px;
+	width: 190px;
+	background-repeat: no-repeat;
+	top: -5px;
+	right: -56px;
+	}
+.imgIcon{
+	width: 80px;
+	height: 80px;
+	}
+.priceTable h3{
+	color: #fbc531;
+	text-transform: uppercase;
+	}
+.priceTable p{
+	font-size: 13px;
+	opacity: 0.9;
+	}
+
+.priceDetails{
+	background-color:#3A3A3A;
+	padding: 30px;
+	}
+.List{
+	margin-left: 25px;
+	}
+.ulList{
+	list-style-image:url('icons/correct_List.png');
+	}
+.ulList li{
+	margin-bottom: 20px;
+	}
+.btnSelect{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+.btn{
+	width: 80%;
+	height: 60px;
+	background:#1A1A1A;
+	color: #fbc531;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	}
+@media only screen and (max-width: 500px){
+	.container{
+		width: 100%;
+		flex-direction: column;
+	}
+}
